@@ -5,7 +5,7 @@
 var groupAnagrams = function(strs) {
     const groups = new Map();
 
-    for(i = 0; i < strs.length; i++){
+    for( let i = 0; i < strs.length; i++){
 const word = strs[i];
 
 const key = word.split("").sort().join("");
