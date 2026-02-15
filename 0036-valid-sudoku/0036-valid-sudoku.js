@@ -7,8 +7,8 @@ var isValidSudoku = function(board) {
     const cols = Array.from({length: 9}, () => new Set());
     const boxes = Array.from({length: 9}, () => new Set());
 
-    for (let r = 0; r < rows.length; r++){
-        for (let c = 0; c < cols.length; c++){
+    for (let r = 0; r < 9; r++){
+        for (let c = 0; c < 9; c++){
             const val = board[r][c];
             if (val === ".") continue;
 
